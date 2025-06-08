@@ -1,0 +1,39 @@
+
+Mapa Mental - Estratégia de Testes Automação API Trello
+
+1. Objetivo
+   - Validar funcionalidades da API do Trello automatizadas via Cypress
+   - Garantir que endpoints respondem corretamente e o fluxo funciona
+
+2. Escopo
+   - Testar endpoints principais: criação, leitura, atualização e deleção de boards, listas e cards
+   - Autenticação e autorização via API key e token
+
+3. Tipos de Testes
+   - Testes de funcionalidade (CRUD)
+   - Testes de autenticação (login/validação tokens)
+   - Testes de validação de dados (campos obrigatórios, formatos)
+   - Testes de erro (inputs inválidos, ações não permitidas)
+
+4. Estrutura dos Testes
+   - Organização em arquivos por recurso (boards, lists, cards)
+   - Hooks para setup/teardown (criar boards antes, limpar depois)
+   - Uso de variáveis de ambiente para tokens e chaves
+
+5. Ferramentas
+   - Cypress para execução e relatórios
+   - Plugins para geração de relatório (mochawesome, etc.)
+
+6. Cenários Importantes
+   - Criar board com nome válido e inválido
+   - Criar lista em board existente
+   - Criar card na lista
+   - Atualizar card e validar retorno
+   - Deletar card/lista/board
+   - Verificar erro ao usar token inválido
+   - Testar limites e dados extremos
+
+7. Critérios de Aceitação
+   - Todos os testes devem passar em ambiente controlado
+   - Cobertura dos principais fluxos de uso da API
+   - Tratamento e validação correta de respostas e status HTTP
