@@ -57,6 +57,10 @@ npx cypress run
 ```bash
 npm run test
 
+6. Para abrir o Cypress com interface visual:
+
+npm run test:open
+
  Testes automatizados
 Os testes foram desenvolvidos em Cypress utilizando a API pública do Trello. Os arquivos estão localizados em:
 cypress/e2e/
