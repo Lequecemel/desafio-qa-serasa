@@ -8,7 +8,7 @@ Este projeto é a solução para o desafio prático de QA da Serasa Experian. El
 
 ---
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 Prova_QA/
 │
@@ -51,6 +51,11 @@ npx cypress open
 
 4. Execute os testes pela interface do Cypress ou via terminal:
 npx cypress run
+
+5. Para rodar todos os testes no terminal:
+
+```bash
+npm run test
 
  Testes automatizados
 Os testes foram desenvolvidos em Cypress utilizando a API pública do Trello. Os arquivos estão localizados em:
